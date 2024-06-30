@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #d0eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.product .gallery {
+    display: flex;
+    align-items: center;
+    flex-basis: 47%;
+    padding: 40px;
+    background: #fff;
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.product .gallery img {
+    width: 100%;
+    display: block;
+}
+
+.product .details {
+    flex-basis: 53%;
+    background: #fff;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+
+.product .details .product-name {
+    color: #333;
+    font-size: 35px;
+}
+
+.product .details .product-price {
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.product .details .discount {
+    color: #00d874;
+    margin-bottom: 20px;
+}
+
+.product .details form {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.product .details form .size-select {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.product .details form .size-select p {
+    width: 70px;
+}
+
+.product .details form .size-select input:checked + span {
+    color: blue;
+    font-weight: 600;
+}
+
+
+.product .details form .size-select input {
+    display: none;
+}
+
+.product .details form .size-select span {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.product .details form .color-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product .details form .color-select p {
+    width: 75px;
+}
+
+.product .details form .color-select span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-1 {
+    background: black;
+}
+
+.color-2 {
+    background: green;
+}
+
+.color-3 {
+    background: red;
+}
+
+.color-4 {
+    background: blue;
+}
+
+.product .details form .color-select input {
+    display: none;
+}
+
+.product .details form .color-select input:checked + span {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.quantity-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-select p {
+    width: 75px;
+}
+
+.quantity-select input {
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+form button {
+    background: #553ff0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+}
+
+.controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.btn {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn.active {
+    background: #553ff0;
+}
